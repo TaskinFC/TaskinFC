@@ -2,7 +2,7 @@
 
 Site açık kaynak kodludur ve herhangi bir kâr amacı gütmez.
 
-## Gizlilik
+## Gizlilik 👀
 
 Sitedeki özellikleri istediğiniz gibi kullanabilirsiniz.
 Fakat sitedeki belirli kişilerin fotoğraflarını kişilerin izni dışında kullanmanız sizin sorumluluğunuz altındadır.
