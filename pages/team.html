@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kadro - Taskın FC</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/team.css">
+  <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <a href="../index.html">
+          <img src="../assets/images/logo.png" alt="Taskın FC Logo" class="logo">
+        </a>
+      </div>
+      <nav>
+        <div class="mobile-menu-btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Anasayfa</a></li>
+          <li><a href="./team.html" class="active">Kadro</a></li>
+          <li><a href="./fixtures.html">Fikstür</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="team-hero">
+      <div class="team-hero-content">
+        <h1>TAKIM KADROSU</h1>
+        <p>2024-2025 Sezonu</p>
+      </div>
+    </section>
+
+    <section class="team-filters">
+      <div class="filter-container">
+        <h2>Oyuncular</h2>
+        <div class="filters">
+          <button class="filter-btn active" data-filter="all">Tümü</button>
+          <button class="filter-btn" data-filter="goalkeeper">Kaleciler</button>
+          <button class="filter-btn" data-filter="defender">Defans</button>
+          <button class="filter-btn" data-filter="midfielder">Orta Saha</button>
+          <button class="filter-btn" data-filter="forward">Forvet</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="player-grid">
+      <!-- Kaleciler -->
+      <div class="player-card goalkeeper">
+        <div class="player-card-inner">
+          <div class="player-card-front">
+            <div class="player-image">
+              <img src="/assets/images/onur.png" alt="onur">
+              <div class="player-number">83</div>
+            </div>
+            <div class="player-info">
+              <h3>Onur Koç</h3>
+              <p class="player-position">Kaleci</p>
+              <p class="player-nickname">"Duvar"</p>
+            </div>
+          </div>
+          <div class="player-card-back">
+            <div class="player-details">
+              <h3>Onur Koç</h3>
+              <div class="detail-item">
+                <span class="label">Yaş:</span>
+                <span class="value">16</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Boy:</span>
+                <span class="value">1.67m</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Kilo:</span>
+                <span class="value">65kg</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Uyruk:</span>
+                <span class="value">Türkiye</span>
+              </div>
+              <div class="player-stats">
+                <div class="stat">
+                  <span class="stat-value">5</span>
+                  <span class="stat-label">Maç</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">2</span>
+                  <span class="stat-label">Gol</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">112</span>
+                  <span class="stat-label">Kurtarış</span>
+                </div>
+              </div>
+              <p class="player-bio">Taskın FC'nin vazgeçilmez kalecisi. Kalesinde adeta bir duvar gibi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="player-card goalkeeper">
+        <div class="player-card-inner">
+          <div class="player-card-front">
+            <div class="player-image">
+              <img src="/assets/images/erturk2.PNG" alt="erturk">
+              <div class="player-number">26</div>
+            </div>
+            <div class="player-info">
+              <h3>Efe Ertürk</h3>
+              <p class="player-position">Kaleci</p>
+              <p class="player-nickname">"Genç Panter"</p>
+            </div>
+          </div>
+          <div class="player-card-back">
+            <div class="player-details">
+              <h3>Efe Ertürk</h3>
+              <div class="detail-item">
+                <span class="label">Yaş:</span>
+                <span class="value">16</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Boy:</span>
+                <span class="value">1.72m</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Kilo:</span>
+                <span class="value">59kg</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Uyruk:</span>
+                <span class="value">Türkiye</span>
+              </div>
+              <div class="player-stats">
+                <div class="stat">
+                  <span class="stat-value">4</span>
+                  <span class="stat-label">Maç</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">0</span>
+                  <span class="stat-label">Gol</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">0</span>
+                  <span class="stat-label">Kurtarış</span>
+                </div>
+              </div>
+              <p class="player-bio">Altyapıdan yetişen genç yeteneklerimizden. Refleksleri ve ayak tekniği ile dikkat çekiyor. Geleceğin yıldız kalecisi olmaya aday.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Defans -->
+      <div class="player-card defender">
+        <div class="player-card-inner">
+          <div class="player-card-front">
+            <div class="player-image">
+              <img src="/assets/images/efekan.jpg" alt="efekan">
+              <div class="player-number">31</div>
+            </div>
+            <div class="player-info">
+              <h3>Efekan Yetim</h3>
+              <p class="player-position">Stoper</p>
+              <p class="player-nickname">"Maestro"</p>
+            </div>
+          </div>
+          <div class="player-card-back">
+            <div class="player-details">
+              <h3>Efekan Yetim</h3>
+              <div class="detail-item">
+                <span class="label">Yaş:</span>
+                <span class="value">16</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Boy:</span>
+                <span class="value">1.72m</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Kilo:</span>
+                <span class="value">60kg</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Uyruk:</span>
+                <span class="value">Türkiye</span>
+              </div>
+              <div class="player-stats">
+                <div class="stat">
+                  <span class="stat-value">6</span>
+                  <span class="stat-label">Maç</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">0</span>
+                  <span class="stat-label">Gol</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">3</span>
+                  <span class="stat-label">Asist</span>
+                </div>
+              </div>
+              <p class="player-bio">Topla oynama kabiliyetiyle dikkat çeken modern bir stoper. Savunmadan hücuma geçişlerde kilit rol oynuyor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="player-card defender">
+        <div class="player-card-inner">
+          <div class="player-card-front">
+            <div class="player-image">
+              <img src="/assets/images/mirac.jpg" alt="mirac">
+              <div class="player-number">4</div>
+            </div>
+            <div class="player-info">
+              <h3>Miraç Yiğit</h3>
+              <p class="player-position">Stoper</p>
+              <p class="player-nickname">"Kaya"</p>
+            </div>
+          </div>
+          <div class="player-card-back">
+            <div class="player-details">
+              <h3>Miraç Yiğit</h3>
+              <div class="detail-item">
+                <span class="label">Yaş:</span>
+                <span class="value">16</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Boy:</span>
+                <span class="value">1.78m</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Kilo:</span>
+                <span class="value">70kg</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Uyruk:</span>
+                <span class="value">Türkiye</span>
+              </div>
+              <div class="player-stats">
+                <div class="stat">
+                  <span class="stat-value">5</span>
+                  <span class="stat-label">Maç</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">0</span>
+                  <span class="stat-label">Gol</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">75</span>
+                  <span class="stat-label">Müdahale</span>
+                </div>
+              </div>
+              <p class="player-bio">Defansın lideri ve takımın en sert oyuncusu.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="player-card defender">
+        <div class="player-card-inner">
+          <div class="player-card-front">
+            <div class="player-image">
+              <img src="/assets/images/eray.jpg" alt="eray">
+              <div class="player-number">66</div>
+            </div>
+            <div class="player-info">
+              <h3>Eray Aydınsoy</h3>
+              <p class="player-position">Stoper</p>
+              <p class="player-nickname">"Roket"</p>
+            </div>
+          </div>
+          <div class="player-card-back">
+            <div class="player-details">
+              <h3>Eray Aydınsoy</h3>
+              <div class="detail-item">
+                <span class="label">Yaş:</span>
+                <span class="value">16</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Boy:</span>
+                <span class="value">1.86m</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Kilo:</span>
+                <span class="value">82kg</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Uyruk:</span>
+                <span class="value">Türkiye</span>
+              </div>
+              <div class="player-stats">
+                <div class="stat">
+                  <span class="stat-value">6</span>
+                  <span class="stat-label">Maç</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">0</span>
+                  <span class="stat-label">Gol</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">74</span>
+                  <span class="stat-label">Müdahale</span>
+                </div>
+              </div>
+              <p class="player-bio">Dayanıklılığıyla bilinen stoper.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="player-card forward">
+        <div class="player-card-inner">
+          <div class="player-card-front">
+            <div class="player-image">
+              <img src="/assets/images/ekrem.jpg" alt="ekrem">
+              <div class="player-number">10</div>
+            </div>
+            <div class="player-info">
+              <h3>Ekrem Bilim</h3>
+              <p class="player-position">Sol Kanat</p>
+              <p class="player-nickname">"Çelik"</p>
+            </div>
+          </div>
+          <div class="player-card-back">
+            <div class="player-details">
+              <h3>Ekrem Bilim</h3>
+              <div class="detail-item">
+                <span class="label">Yaş:</span>
+                <span class="value">16</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Boy:</span>
+                <span class="value">1.70m</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Kilo:</span>
+                <span class="value">62kg</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Uyruk:</span>
+                <span class="value">Türkiye</span>
+              </div>
+              <div class="player-stats">
+                <div class="stat">
+                  <span class="stat-value">4</span>
+                  <span class="stat-label">Maç</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">3</span>
+                  <span class="stat-label">Gol</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">9</span>
+                  <span class="stat-label">Asist</span>
+                </div>
+              </div>
+              <p class="player-bio">Hırslı ve sert bir sol kanat. Savunmadaki güvenilirliğiyle takımın önemli taşlarından biri. Fiziksel mücadelelerde asla geri adım atmıyor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Orta Saha -->
+      <div class="player-card forward">
+        <div class="player-card-inner">
+          <div class="player-card-front">
+            <div class="player-image">
+              <img src="/assets/images/emre.jpg" alt="Emre">
+              <div class="player-number">9</div>
+            </div>
+            <div class="player-info">
+              <h3>Emre Taşoluk</h3>
+              <p class="player-position">Santrafor</p>
+              <p class="player-nickname">"Sihirbaz"</p>
+            </div>
+          </div>
+          <div class="player-card-back">
+            <div class="player-details">
+              <h3>Emre Taşoluk</h3>
+              <div class="detail-item">
+                <span class="label">Yaş:</span>
+                <span class="value">16</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Boy:</span>
+                <span class="value">1.74m</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Kilo:</span>
+                <span class="value">75kg</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Uyruk:</span>
+                <span class="value">Türkiye</span>
+              </div>
+              <div class="player-stats">
+                <div class="stat">
+                  <span class="stat-value">6</span>
+                  <span class="stat-label">Maç</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">7</span>
+                  <span class="stat-label">Gol</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">3</span>
+                  <span class="stat-label">Asist</span>
+                </div>
+              </div>
+              <p class="player-bio">Takımın kaptanı ve yaratıcı beyni. Olağanüstü pas yeteneği ve saha görüşüyle adeta bir maestro. Hala gol kralı.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="player-card midfielder">
+        <div class="player-card-inner">
+          <div class="player-card-front">
+            <div class="player-image">
+              <img src="/assets/images/logo.png" alt="cicek">
+              <div class="player-number">98</div>
+            </div>
+            <div class="player-info">
+              <h3>Hüseyin Ömer Çiçek</h3>
+              <p class="player-position">Defansif Orta Saha</p>
+              <p class="player-nickname">"Balyoz"</p>
+            </div>
+          </div>
+          <div class="player-card-back">
+            <div class="player-details">
+              <h3>Hüseyin Ömer Çiçek</h3>
+              <div class="detail-item">
+                <span class="label">Yaş:</span>
+                <span class="value">16</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Boy:</span>
+                <span class="value">1.78m</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Kilo:</span>
+                <span class="value">65kg</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Uyruk:</span>
+                <span class="value">Türkiye</span>
+              </div>
+              <div class="player-stats">
+                <div class="stat">
+                  <span class="stat-value">2</span>
+                  <span class="stat-label">Maç</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">2</span>
+                  <span class="stat-label">Gol</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">1</span>
+                  <span class="stat-label">Asist</span>
+                </div>
+              </div>
+              <p class="player-bio">Takımın defansif direği. Top kazanma yeteneği ve fiziksel gücüyle rakiplerin korkulu rüyası. Uzun pasları ve şutlarıyla da etkili.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="player-card forward">
+        <div class="player-card-inner">
+          <div class="player-card-front">
+            <div class="player-image">
+              <img src="/assets/images/eren.jpg" alt="eren">
+              <div class="player-number">11</div>
+            </div>
+            <div class="player-info">
+              <h3>Eren Aydemir</h3>
+              <p class="player-position">Sağ Kanat</p>
+              <p class="player-nickname">"Fırtına"</p>
+            </div>
+          </div>
+          <div class="player-card-back">
+            <div class="player-details">
+              <h3>Eren Aydemir</h3>
+              <div class="detail-item">
+                <span class="label">Yaş:</span>
+                <span class="value">16</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Boy:</span>
+                <span class="value">1.65m</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Kilo:</span>
+                <span class="value">45kg</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Uyruk:</span>
+                <span class="value">Türkiye</span>
+              </div>
+              <div class="player-stats">
+                <div class="stat">
+                  <span class="stat-value">6</span>
+                  <span class="stat-label">Maç</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">1</span>
+                  <span class="stat-label">Gol</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">4</span>
+                  <span class="stat-label">Asist</span>
+                </div>
+              </div>
+              <p class="player-bio">Hızı ve çalımlarıyla rakip savunmaları dağıtan kanat oyuncusu. Özellikle kontrataklarda takımın en tehlikeli silahlarından biri.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="player-card forward">
+        <div class="player-card-inner">
+          <div class="player-card-front">
+            <div class="player-image">
+              <img src="/assets/images/deniz2.PNG" alt="balık">
+              <div class="player-number">99</div>
+            </div>
+            <div class="player-info">
+              <h3>Deniz Balık</h3>
+              <p class="player-position">Santrafor</p>
+              <p class="player-nickname">"Bitirici"</p>
+            </div>
+          </div>
+          <div class="player-card-back">
+            <div class="player-details">
+              <h3>Deniz Balık</h3>
+              <div class="detail-item">
+                <span class="label">Yaş:</span>
+                <span class="value">16</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Boy:</span>
+                <span class="value">1.78m</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Kilo:</span>
+                <span class="value">150kg</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Uyruk:</span>
+                <span class="value">Türkiye</span>
+              </div>
+              <div class="player-stats">
+                <div class="stat">
+                  <span class="stat-value">1</span>
+                  <span class="stat-label">Maç</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">1</span>
+                  <span class="stat-label">Gol</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">0</span>
+                  <span class="stat-label">Asist</span>
+                </div>
+              </div>
+              <p class="player-bio">İnanılmaz teknik kapasitesiyle dikkat çeken santrafor oyuncusu. Dribbling yeteneği ve keskin şutlarıyla maç kazandırıyor.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Forvetler -->
+      <div class="player-card forward">
+        <div class="player-card-inner">
+          <div class="player-card-front">
+            <div class="player-image">
+              <img src="/assets/images/bertug2.PNG" alt="ber2">
+              <div class="player-number">56</div>
+            </div>
+            <div class="player-info">
+              <h3>Bertuğ Güner</h3>
+              <p class="player-position">Santrafor</p>
+              <p class="player-nickname">"Sniper"</p>
+            </div>
+          </div>
+          <div class="player-card-back">
+            <div class="player-details">
+              <h3>Bertuğ Güner</h3>
+              <div class="detail-item">
+                <span class="label">Yaş:</span>
+                <span class="value">16</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Boy:</span>
+                <span class="value">1.80m</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Kilo:</span>
+                <span class="value">72kg</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Uyruk:</span>
+                <span class="value">Türkiye</span>
+              </div>
+              <div class="player-stats">
+                <div class="stat">
+                  <span class="stat-value">1</span>
+                  <span class="stat-label">Maç</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">5</span>
+                  <span class="stat-label">Gol</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">0</span>
+                  <span class="stat-label">Asist</span>
+                </div>
+              </div>
+              <p class="player-bio">Takımın gol makinesi. Ceza sahası içinde adeta bir hayalet gibi. Bitiricilik yeteneği ve hava toplarındaki üstünlüğüyle lig'in en tehlikeli forvetlerinden.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="player-card midfielder">
+        <div class="player-card-inner">
+          <div class="player-card-front">
+            <div class="player-image">
+              <img src="/assets/images/gokan2.PNG" alt="gokan">
+              <div class="player-number">16</div>
+            </div>
+            <div class="player-info">
+              <h3>Gökhan Deniz</h3>
+              <p class="player-position">Defansif Orta Saha</p>
+              <p class="player-nickname">"Panter"</p>
+            </div>
+          </div>
+          <div class="player-card-back">
+            <div class="player-details">
+              <h3>Gökhan Deniz</h3>
+              <div class="detail-item">
+                <span class="label">Yaş:</span>
+                <span class="value">16</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Boy:</span>
+                <span class="value">1.97m</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Kilo:</span>
+                <span class="value">92kg</span>
+              </div>
+              <div class="detail-item">
+                <span class="label">Uyruk:</span>
+                <span class="value">Türkiye</span>
+              </div>
+              <div class="player-stats">
+                <div class="stat">
+                  <span class="stat-value">1</span>
+                  <span class="stat-label">Maç</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">0</span>
+                  <span class="stat-label">Gol</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">4</span>
+                  <span class="stat-label">Asist</span>
+                </div>
+              </div>
+              <p class="player-bio">Hızı ve çevikliğiyle dikkat çeken defansif orta saha. Özellikle arkadan gelen koşularda etkili. Son sezon performansıyla okul takımına seçildi.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="technical-staff">
+      <h2>Teknik Ekip</h2>
+      <div class="staff-container">
+        <div class="staff-card">
+          <div class="staff-image">
+            <img src="/assets/images/bertug2.PNG" alt="ber2">
+          </div>
+          <div class="staff-info">
+            <h3>Bertuğ Güner</h3>
+            <p class="staff-position">Teknik Direktör</p>
+            <p class="staff-experience">Tecrübe: 5 Yıl</p>
+            <p class="staff-bio">2024 yılından bu yana takımımızın başında. Modern futbol anlayışıyla takımı yeniden inşa etti.</p>
+          </div>
+        </div>
+        <div class="staff-card">
+          <div class="staff-image">
+            <img src="/assets/images/gokan2.PNG" alt="gokan">
+          </div>
+          <div class="staff-info">
+            <h3>Gökhan Deniz</h3>
+            <p class="staff-position">Yardımcı Antrenör</p>
+            <p class="staff-experience">Tecrübe: 5 Yıl</p>
+            <p class="staff-bio">Bertuğ Güner'in sağ kolu ve taktik dehası. Özellikle set oyunları ve duran top organizasyonlarında uzmanlaşmış.</p>
+          </div>
+        </div>
+        <div class="staff-card">
+          <div class="staff-image">
+            <img src="/assets/images/logo.png" alt="talha">
+          </div>
+          <div class="staff-info">
+            <h3>Talha Özdemir</h3>
+            <p class="staff-position">Kaleci Antrenörü</p>
+            <p class="staff-experience">Tecrübe: 1 Yıl</p>
+            <p class="staff-bio">Kalecilerimizin performansının artmasında büyük pay sahibi. Modern kaleci eğitim tekniklerinin uzmanı.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="../assets/images/logo.png" alt="Taskın FC Logo">
+      </div>
+      <div class="footer-links">
+        <div class="footer-section">
+          <h3>Hızlı Erişim</h3>
+          <ul>
+            <li><a href="../index.html">Anasayfa</a></li>
+            <li><a href="./team.html">Kadro</a></li>
+            <li><a href="./fixtures.html">Fikstür</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>İletişim</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> "yok"</li>
+            <li><i class="fas fa-phone"></i> "yok"</li>
+            <li><i class="fas fa-envelope"></i> "yok"</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Sosyal Medya</h3>
+          <div class="social-icons">
+            <a href="/pages/error.html" class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="/pages/error.html" class="social-icon x"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/taskin_fc_official/" class="social-icon ig"><i class="fab fa-instagram"></i></a>
+            <a href="/pages/error.html" class="social-icon yt"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2025 TASKIN FC.</p>
+      <p>Kar amacı gütmeyen açık kaynak kodlu bir website.</p>
+    </div>
+  </footer>
+
+  <div class="crowd-sound">
+    <audio id="crowd-audio" loop>
+      <source src="../assets/sounds/crowd.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/team.js"></script>
+</body>
+</html>

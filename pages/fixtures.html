@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fikstür - Taskın FC</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/fixtures.css">
+  <link rel="icon" type="image/x-icon" href="/assets/images/logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css">
+</head>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-container">
+        <a href="../index.html">
+          <img src="../assets/images/logo.png" alt="Taskın FC Logo" class="logo">
+        </a>
+      </div>
+      <nav>
+        <div class="mobile-menu-btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="../index.html">Anasayfa</a></li>
+          <li><a href="./team.html">Kadro</a></li>
+          <li><a href="./fixtures.html" class="active">Fikstür</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="fixtures-hero">
+      <div class="fixtures-hero-content">
+        <h1>FİKSTÜR</h1>
+        <p>2024-2025 Sezonu</p>
+      </div>
+    </section>
+
+    <section class="fixtures-nav">
+      <div class="nav-container">
+        <button class="nav-btn active" data-filter="upcoming">Gelecek Maçlar</button>
+        <button class="nav-btn" data-filter="past">Geçmiş Maçlar</button>
+        <button class="nav-btn" data-filter="all">Tüm Sezon</button>
+      </div>
+    </section>
+
+    <section class="fixtures-container">
+      <div class="month-section">
+        <h2>Mayıs 2025</h2>
+        <div class="fixtures-grid">
+          <div class="match-card upcoming">
+            <div class="match-date">
+              <span class="day">24</span>
+              <span class="month">MAY</span>
+              <span class="time">19:00</span>
+            </div>
+            <div class="match-details">
+              <div class="team home">
+                <img src="../assets/images/logo.png" alt="Taskın FC">
+                <span class="team-name">Taskın FC</span>
+              </div>
+              <div class="match-info">
+                <span class="vs">VS</span>
+                <span class="stadium">Baksan Elite Kırmızı Saha</span>
+                <span class="competition">TADLeauge</span>
+              </div>
+              <div class="team away">
+                <img src="../assets/images/opponent.png" alt="Kartalspor">
+                <span class="team-name">Kamış FK</span>
+              </div>
+            </div>
+            <div class="match-actions">
+              <button class="btn primary-btn">Bilet Al</button>
+              <button class="btn outline-btn">Hatırlatıcı Kur</button>
+            </div>
+          </div>
+
+          <div class="match-card past">
+            <div class="match-date">
+              <span class="day">17</span>
+              <span class="month">MAY</span>
+              <span class="time">20:30</span>
+            </div>
+            <div class="match-details">
+              <div class="team home">
+                <img src="../assets/images/opponent.png" alt="Yıldızspor">
+                <span class="team-name">Kamış FK</span>
+                <span class="score">3</span>
+              </div>
+              <div class="match-info">
+                <span class="result">Maç Sonucu</span>
+                <span class="stadium">Baksan Elite Kapalı Saha</span>
+                <span class="competition">TADLeauge</span>
+              </div>
+              <div class="team away">
+                <img src="../assets/images/logo.png" alt="Taskın FC">
+                <span class="team-name">Taskın FC</span>
+                <span class="score win">5</span>
+              </div>
+            </div>
+            <div class="match-actions">
+              <button onclick="ocen()" class="btn secondary-btn">Maç Özeti</button>
+              <button class="btn outline-btn">İstatistikler</button>
+            </div>
+          </div>
+          <!--<video id="17may" width="450" height="420"  class="may17">
+          <source src="/assets/images/may17.mp4" type="video/mp4">
+          Tarayıcını değiştir tekrar dene
+          </video>
+          <script>
+            var mackaydi = document.getElementById("17may");
+
+            function ocen() {
+              if (mackaydi.paused){
+                mackaydi.style.visibility = "initial";
+                mackaydi.play();
+              } else {
+                mackaydi.style.visibility = "hidden";
+                mackaydi.pause();
+              }
+            }
+          </script> * BU KISIM GELECEK MAÇTA KULLANILACAK*-->
+  </script>
+        </div>
+      </div>
+
+       <div class="match-card past">
+            <div class="match-date">
+              <span class="day">7</span>
+              <span class="month">MART</span>
+              <span class="time">20:30</span>
+            </div>
+            <div class="match-details">
+              <div class="team home">
+                <img src="../assets/images/opponent.png" alt="Yıldızspor">
+                <span class="team-name">Kamış FK</span>
+                <span class="score">0</span>
+              </div>
+              <div class="match-info">
+                <span class="result">Maç Sonucu</span>
+                <span class="stadium">Baksan Elite Kapalı Saha</span>
+                <span class="competition">TADLeauge</span>
+              </div>
+              <div class="team away">
+                <img src="../assets/images/logo.png" alt="Taskın FC">
+                <span class="team-name">Taskın FC</span>
+                <span class="score win">1</span>
+              </div>
+            </div>
+            <div class="match-actions">
+              <button class="btn secondary-btn">Maç Özeti</button>
+              <button class="btn outline-btn">İstatistikler</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+     <div class="match-card past">
+            <div class="match-date">
+              <span class="day">28</span>
+              <span class="month">MART</span>
+              <span class="time">20:00</span>
+            </div>
+            <div class="match-details">
+              <div class="team home">
+                <img src="../assets/images/opponent.png" alt="Yıldızspor">
+                <span class="team-name">Kamış FK</span>
+                <span class="score win">4</span>
+              </div>
+              <div class="match-info">
+                <span class="result">Maç Sonucu</span>
+                <span class="stadium">Baksan Elite Kapalı Saha</span>
+                <span class="competition">TADLeauge</span>
+              </div>
+              <div class="team away">
+                <img src="../assets/images/logo.png" alt="Taskın FC">
+                <span class="team-name">Taskın FC</span>
+                <span class="score">1</span>
+              </div>
+            </div>
+            <div class="match-actions">
+              <button class="btn secondary-btn">Maç Özeti</button>
+              <button class="btn outline-btn">İstatistikler</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <div class="match-card past">
+            <div class="match-date">
+              <span class="day">11</span>
+              <span class="month">NİSAN</span>
+              <span class="time">20:30</span>
+            </div>
+            <div class="match-details">
+              <div class="team home">
+                <img src="../assets/images/opponent.png" alt="Yıldızspor">
+                <span class="team-name">Kamış FK</span>
+                <span class="score">1</span>
+              </div>
+              <div class="match-info">
+                <span class="result">Maç Sonucu</span>
+                <span class="stadium">Baksan Elite Kapalı Saha</span>
+                <span class="competition">TADLeauge</span>
+              </div>
+              <div class="team away">
+                <img src="../assets/images/logo.png" alt="Taskın FC">
+                <span class="team-name">Taskın FC</span>
+                <span class="score win">4</span>
+              </div>
+            </div>
+            <div class="match-actions">
+              <button class="btn secondary-btn">Maç Özeti</button>
+              <button class="btn outline-btn">İstatistikler</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="match-card past">
+            <div class="match-date">
+              <span class="day">13</span>
+              <span class="month">NİSAN</span>
+              <span class="time">19:30</span>
+            </div>
+            <div class="match-details">
+              <div class="team home">
+                <img src="" alt="Turan FC logo">
+                <span class="team-name">Turan FC</span>
+                <span class="score win">10</span>
+              </div>
+              <div class="match-info">
+                <span class="result">Maç Sonucu</span>
+                <span class="stadium">Baksan Elite Kapalı Saha</span>
+                <span class="competition">TADLeauge</span>
+              </div>
+              <div class="team away">
+                <img src="../assets/images/logo.png" alt="Taskın FC">
+                <span class="team-name">Taskın FC</span>
+                <span class="score">5</span>
+              </div>
+            </div>
+            <div class="match-actions">
+              <button class="btn secondary-btn">Maç Özeti</button>
+              <button class="btn outline-btn">İstatistikler</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="match-card past">
+            <div class="match-date">
+              <span class="day">11</span>
+              <span class="month">NİSAN</span>
+              <span class="time">20:30</span>
+            </div>
+            <div class="match-details">
+              <div class="team home">
+                <img src="../assets/images/opponent.png" alt="Yıldızspor">
+                <span class="team-name">Kamış FK</span>
+                <span class="score win">5</span>
+              </div>
+              <div class="match-info">
+                <span class="result">Maç Sonucu</span>
+                <span class="stadium">Baksan Elite Kapalı Saha</span>
+                <span class="competition">TADLeauge</span>
+              </div>
+              <div class="team away">
+                <img src="../assets/images/logo.png" alt="Taskın FC">
+                <span class="team-name">Taskın FC</span>
+                <span class="score">1</span>
+              </div>
+            </div>
+            <div class="match-actions">
+              <button class="btn secondary-btn">Maç Özeti</button>
+              <button class="btn outline-btn">İstatistikler</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+
+    <section class="season-stats">
+      <h2>Sezon İstatistikleri</h2>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-futbol"></i>
+          </div>
+          <div class="stat-info">
+            <span class="stat-value">17</span>
+            <span class="stat-label">Gol</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="stat-info">
+            <span class="stat-value">3</span>
+            <span class="stat-label">Galibiyet</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <div class="stat-info">
+            <span class="stat-value">0</span>
+            <span class="stat-label">Beraberlik</span>
+          </div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-icon">
+            <i class="fas fa-times-circle"></i>
+          </div>
+          <div class="stat-info">
+            <span class="stat-value">3</span>
+            <span class="stat-label">Mağlubiyet</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="../assets/images/logo.png" alt="Taskın FC Logo">
+      </div>
+      <div class="footer-links">
+        <div class="footer-section">
+          <h3>Hızlı Erişim</h3>
+          <ul>
+            <li><a href="../index.html">Anasayfa</a></li>
+            <li><a href="./team.html">Kadro</a></li>
+            <li><a href="./fixtures.html">Fikstür</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>İletişim</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> "yok"</li>
+            <li><i class="fas fa-phone"></i> "yok"</li>
+            <li><i class="fas fa-envelope"></i> "yok"</li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Sosyal Medya</h3>
+          <div class="social-icons">
+            <a href="/pages/error.html" class="social-icon fb"><i class="fab fa-facebook-f"></i></a>
+            <a href="/pages/error.html" class="social-icon x"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/taskin_fc_official/" class="social-icon ig"><i class="fab fa-instagram"></i></a>
+            <a href="/pages/error.html" class="social-icon yt"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>2025 TASKIN FC.</p>
+      <p>Kar amacı gütmeyen açık kaynak kodlu bir website.</p>
+    </div>
+  </footer>
+
+  <div class="crowd-sound">
+    <audio id="crowd-audio" loop>
+      <source src="../assets/sounds/crowd.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+  <script src="../js/main.js"></script>
+  <script src="../js/fixtures.js"></script>
+</body>
+</html>
