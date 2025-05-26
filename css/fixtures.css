@@ -1,0 +1,437 @@
+/* Fixtures Page Specific Styles */
+
+/* Hero Section */
+.fixtures-hero {
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+              url('https://images.pexels.com/photos/47354/the-ball-stadion-football-the-pitch-47354.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 0;
+  padding-top: 80px;
+}
+
+.fixtures-hero-content {
+  max-width: 1000px;
+  padding: var(--space-lg);
+  color: var(--white);
+  z-index: var(--z-normal);
+  animation: fadeIn 1.5s ease-out;
+}
+
+.fixtures-hero-content h1 {
+  font-size: 6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: var(--space-sm);
+  color: var(--white);
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+
+.fixtures-hero-content p {
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: var(--accent-color);
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Section */
+.fixtures-nav {
+  background-color: #DC5F00;
+  padding: var(--space-lg) var(--space-md);
+  position: sticky;
+  top: 80px;
+  z-index: var(--z-above);
+}
+
+.nav-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+}
+
+.nav-btn {
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: 2px solid #000000;
+  color: #000000;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+}
+
+.nav-btn:hover,
+.nav-btn.active {
+  background-color: #000000;
+  color: #F8EDED;
+}
+
+/* Video Modal */
+.video-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--z-modal);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.video-modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.video-container {
+  width: 90%;
+  max-width: 1000px;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  top: -40px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--white);
+  border: none;
+  color: var(--dark);
+  font-size: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.modal-close:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
+  transform: scale(1.1);
+}
+
+/* Fixtures Container */
+.fixtures-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-xl) var(--space-md);
+}
+
+.month-section {
+  margin-bottom: var(--space-xl);
+}
+
+.month-section h2 {
+  font-size: 2.8rem;
+  color: var(--dark);
+  margin-bottom: var(--space-lg);
+  position: relative;
+}
+
+.month-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: var(--primary-color);
+  border-radius: var(--radius-sm);
+}
+
+.fixtures-grid {
+  display: grid;
+  gap: var(--space-lg);
+}
+
+/* Match Card */
+.match-card {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal);
+  position: relative;
+}
+
+.may17 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.match-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.match-date {
+  background-color: #aa0e0e;
+  color: #F8EDED;
+  padding: var(--space-sm);
+  text-align: center;
+}
+
+.match-date .day {
+  font-size: 2.4rem;
+  font-weight: 700;
+  display: block;
+  line-height: 1;
+}
+
+.match-date .month {
+  font-size: 1.4rem;
+  font-weight: 600;
+  display: block;
+  margin-bottom: var(--space-xxs);
+}
+
+.match-date .time {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.match-details {
+  padding: var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+}
+
+.team img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: var(--space-xs);
+  transition: transform var(--transition-fast);
+}
+
+.team:hover img {
+  transform: scale(1.1);
+}
+
+.team-name {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: var(--space-xxs);
+}
+
+.score {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--dark-gray);
+}
+
+.score.win {
+  color: var(--success);
+}
+
+.match-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 40%;
+}
+
+.vs {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--dark-gray);
+  margin-bottom: var(--space-xs);
+}
+
+.result {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--medium-gray);
+  margin-bottom: var(--space-xs);
+}
+
+.stadium {
+  font-size: 1.4rem;
+  color: var(--medium-gray);
+  margin-bottom: var(--space-xxs);
+}
+
+.competition {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.match-actions {
+  padding: var(--space-md);
+  display: flex;
+  justify-content: center;
+  gap: var(--space-sm);
+  border-top: 1px solid var(--light-gray);
+}
+
+/* Season Stats */
+.season-stats {
+  background-color: var(--off-white);
+  padding: var(--space-xl) var(--space-md);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--space-lg);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.stat-card {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  text-align: center;
+  box-shadow: var(--shadow-md);
+  transition: transform var(--transition-normal);
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  font-size: 3.2rem;
+  color: rgb(197, 100, 10);
+  margin-bottom: var(--space-sm);
+}
+
+.stat-info .stat-value {
+  font-size: 3.6rem;
+  font-weight: 700;
+  color: var(--dark);
+  display: block;
+  line-height: 1;
+  margin-bottom: var(--space-xs);
+}
+
+.stat-info .stat-label {
+  font-size: 1.6rem;
+  color: var(--medium-gray);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+  .fixtures-hero-content h1 {
+    font-size: 5rem;
+  }
+  
+  .match-details {
+    padding: var(--space-md);
+  }
+  
+  .team img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .video-container {
+    width: 95%;
+  }
+  
+  .modal-close {
+    right: 0;
+    top: -50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fixtures-hero-content h1 {
+    font-size: 4rem;
+  }
+  
+  .fixtures-hero-content p {
+    font-size: 2rem;
+  }
+  
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .nav-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .match-details {
+    flex-direction: column;
+    gap: var(--space-md);
+  }
+  
+  .team, .match-info {
+    width: 100%;
+  }
+  
+  .match-actions {
+    flex-direction: column;
+  }
+  
+  .match-actions .btn {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .fixtures-hero {
+    height: 40vh;
+  }
+  
+  .fixtures-hero-content h1 {
+    font-size: 3.2rem;
+  }
+  
+  .fixtures-hero-content p {
+    font-size: 1.8rem;
+  }
+  
+  .month-section h2 {
+    font-size: 2.4rem;
+  }
+  
+  .stat-card {
+    padding: var(--space-md);
+  }
+  
+  .stat-info .stat-value {
+    font-size: 3rem;
+  }
+}
