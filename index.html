@@ -17,13 +17,24 @@
         <img src="./assets/images/logo.png" alt="Taskın FC Logo" class="logo">
       </a>
     </div>
-  <div class="nav-links2" id="navlink2">
+  <div class="mobile-container">
+  <div class="mobile-container-links" id="navlink2">
     <a href="index.html">Ana Sayfa</a>
     <a href="./pages/team.html">Kadro</a>
     <a href="./pages/fixtures.html">Fikstür</a>
   </div>
-  <style>
-  .nav-links2{
+</div>
+
+<nav>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Anasayfa</a></li>
+    <li><a href="./pages/team.html">Kadro</a></li>
+    <li><a href="./pages/fixtures.html">Fikstür</a></li>
+  </ul>
+</nav>
+
+<style>
+  .mobile-container-links{
     display: flex;
     gap: var(--space-sm);
     cursor: pointer;
@@ -35,18 +46,26 @@
     font-size: 1.6rem;
     position: relative;
   }
-  </style>
-  </div>
-    <nav>
 
+.mobile-container,
+.nav-links {
+  display: none;
+}
 
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Anasayfa</a></li>
-        <li><a href="./pages/team.html">Kadro</a></li>
-        <li><a href="./pages/fixtures.html">Fikstür</a></li>
-      </ul>
-    </nav>
-  </div>
+@media (max-width: 768px) {
+  .mobile-container {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex;
+    gap: 20px; 
+  }
+}
+
+</style>
 </header>
   <main>
     <section class="hero">
