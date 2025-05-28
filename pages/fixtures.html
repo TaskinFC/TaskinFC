@@ -18,19 +18,55 @@
           <img src="../assets/images/logo.png" alt="Taskın FC Logo" class="logo">
         </a>
       </div>
-      <nav>
-        <div class="mobile-menu-btn">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-        <ul class="nav-links">
-          <li><a href="../index.html">Anasayfa</a></li>
-          <li><a href="./team.html">Kadro</a></li>
-          <li><a href="./fixtures.html" class="active">Fikstür</a></li>
-        </ul>
-      </nav>
-    </div>
+      <div class="mobile-container">
+  <div class="mobile-container-links" id="navlink2">
+    <a href="index.html">Ana Sayfa</a>
+    <a href="./pages/team.html">Kadro</a>
+    <a href="./pages/fixtures.html">Fikstür</a>
+  </div>
+</div>
+
+<nav>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="../index.html">Anasayfa</a></li>
+    <li><a href="./team.html">Kadro</a></li>
+    <li><a href="./fixtures.html">Fikstür</a></li>
+  </ul>
+</nav>
+
+<style>
+  .mobile-container-links{
+    display: flex;
+    gap: var(--space-sm);
+    cursor: pointer;
+    color: var(--white);
+    font-weight: 600;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+    font-size: 1.6rem;
+    position: relative;
+  }
+
+.mobile-container,
+.nav-links {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .mobile-container {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .nav-links {
+    display: flex;
+    gap: 20px; 
+  }
+}
+
+</style>
   </header>
 
   <main>
